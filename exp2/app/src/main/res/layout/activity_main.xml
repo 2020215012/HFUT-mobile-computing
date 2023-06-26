@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:id="@+id/linearLayout5"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="500dp"
+        android:background="@color/blue"
+        app:layout_constraintBottom_toTopOf="@+id/textView5"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="MissingConstraints">
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="102dp"
+            android:layout_height="34dp"
+            app:srcCompat="@drawable/qqlogo"
+            tools:ignore="MissingConstraints"
+            tools:layout_editor_absoluteY="1dp" />
+
+        <ImageView
+            android:id="@+id/imageView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="210dp"
+            app:srcCompat="@android:drawable/ic_menu_manage"
+            tools:ignore="MissingConstraints"
+            tools:layout_editor_absoluteX="343dp"
+            tools:layout_editor_absoluteY="1dp" />
+
+        <ImageView
+            android:id="@+id/imageView6"
+            android:layout_width="22dp"
+            android:layout_height="30dp"
+            app:srcCompat="@android:drawable/dialog_holo_light_frame" />
+
+        <ImageView
+            android:id="@+id/exit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:srcCompat="@android:drawable/btn_dialog"
+            tools:ignore="MissingConstraints"
+            tools:layout_editor_absoluteX="375dp"
+            tools:layout_editor_absoluteY="1dp" />
+
+
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/icon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="80dp"
+        android:src="@drawable/qqicon"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="MissingConstraints">
+
+    </ImageView>
+
+    <EditText
+        android:id="@+id/text1"
+        android:layout_width="240dp"
+        android:layout_height="40dp"
+        android:layout_marginBottom="20dp"
+        android:drawableLeft="@drawable/qqic"
+        android:gravity="center"
+        android:hint="QQ号码/手机/邮箱"
+        app:layout_constraintBottom_toTopOf="@+id/text2"
+        app:layout_constraintEnd_toEndOf="@+id/text2"
+        app:layout_constraintStart_toStartOf="@+id/text2"
+        app:layout_constraintTop_toBottomOf="@+id/icon"
+        tools:ignore="MissingConstraints">
+    </EditText>
+
+    <EditText
+        android:id="@+id/text2"
+        android:layout_width="240dp"
+        android:layout_height="40dp"
+        android:layout_marginBottom="7dp"
+        android:drawableLeft="@drawable/clock"
+        android:gravity="center"
+        android:hint="密码"
+        android:inputType="textPassword"
+        app:layout_constraintBottom_toTopOf="@+id/textView4"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/text1"
+        tools:ignore="MissingConstraints" />
+
+    <Button
+        android:id="@+id/btn1"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:text="登录"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/checkBox2"
+        tools:ignore="MissingConstraints">
+
+    </Button>
+
+
+    <CheckBox
+        android:id="@+id/checkBox1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="12dp"
+        android:layout_marginEnd="5dp"
+        android:text="自动登录"
+        app:layout_constraintBaseline_toBaselineOf="@+id/checkBox2"
+        app:layout_constraintEnd_toStartOf="@+id/checkBox2"
+        app:layout_constraintHorizontal_chainStyle="packed"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:ignore="MissingConstraints" />
+
+    <CheckBox
+        android:id="@+id/checkBox2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="12dp"
+        android:layout_marginBottom="5dp"
+        android:text="记住密码  找回密码"
+        app:layout_constraintBottom_toTopOf="@+id/btn1"
+        app:layout_constraintEnd_toStartOf="@+id/textView4"
+        app:layout_constraintStart_toEndOf="@+id/checkBox1"
+        app:layout_constraintTop_toBottomOf="@+id/textView4"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text=""
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/checkBox2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/checkBox2"
+        app:layout_constraintTop_toBottomOf="@+id/text2"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="21dp"
+        android:text="注销账号"
+        android:textSize="20dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout5"
+        app:layout_editor_absoluteX="0dp"
+        app:layout_editor_absoluteY="640dp"
+        tools:ignore="MissingConstraints">
+    </TextView>
+
+    <ImageView
+        android:layout_width="37dp"
+        android:layout_height="47dp"
+        android:layout_marginStart="350dp"
+        android:layout_marginBottom="10dp"
+        android:src="@drawable/code2"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout5"
+        app:layout_constraintVertical_bias="1.0"
+        app:layout_editor_absoluteX="400dp"
+        app:layout_editor_absoluteY="700dp"
+        tools:ignore="MissingConstraints">
+    </ImageView>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
